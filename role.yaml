@@ -16,7 +16,7 @@ metadata:
   name: roboshop-jr
 rules:
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["pods/log"] #nouns
+  resources: ["pods"] #nouns
   verbs: ["get", "watch", "list"] #verbs actions
 - apiGroups: ["apps"]
   resources: ["deployments"]
