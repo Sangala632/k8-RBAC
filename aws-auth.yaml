@@ -6,14 +6,15 @@ data:
       - system:bootstrappers
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
-    mapUsers: |
-    - groups:
-      - roboshop-trainee
-      userarn: arn:aws:iam::838180513114:user/sreekanth
-      username: sreekanth 
+  mapUsers: |
+  - groups:
+    - roboshop-trainee
+    userarn: arn:aws:iam::838180513114:user/sreekanth
+    username: sreekanth 
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-04-16T04:47:18Z"
   name: aws-auth
   namespace: kube-system
   uid: 6bb77aa6-36ab-44af-b0ce-38c966d0199a
+
