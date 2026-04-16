@@ -59,7 +59,7 @@ metadata:
   name: roboshop-Cluster
 rules:
 - apiGroups: [""]
-  resources: ["persistentvolumes  "]
+  resources: ["persistentvolumes"]
   verbs: ["get", "list", "watch"]
 
 ---
